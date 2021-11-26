@@ -22,7 +22,7 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const clearForm = () => {
     setFirstName("");

@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<PrivateRoute />}>
+          <Route path="/" element={<Home />} />
+        </Route>
         <Route path="/welcome" element={<Welcome />} />
       </Routes>
     </div>

@@ -10,7 +10,7 @@ const Welcome = () => {
         <h1 className="my-2">Welcome to Creative Network!</h1>
         <h4 className="mb-4">A place to Connect with the world!</h4>
         <Link to="/signup">
-          <Button className="my-2 " size="lg">
+          <Button className="my-2 btn-signup" size="lg">
             SignUp
           </Button>
         </Link>

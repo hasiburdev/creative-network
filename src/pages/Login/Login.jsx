@@ -30,7 +30,7 @@ const Login = () => {
     const result = await googleSignUp();
     console.log(result);
     if (result === "success") {
-      toast.success("Account Created Successfully!");
+      toast.success("Login Successfully!");
       setTimeout(() => navigate("/"), 500);
     }
     if (!result) {
